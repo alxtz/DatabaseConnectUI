@@ -707,18 +707,10 @@ moc_MainWindow.cpp: ../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/QMainW
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qtouchdevice.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qtabwidget.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qicon.h \
-		MainView/MainView.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/QGraphicsView \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qgraphicsview.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpainter.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qtextoption.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpen.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qscrollarea.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qframe.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qgraphicsscene.h \
 		MainView/SQLTableScene/SQLTableScene.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/QGraphicsScene \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qgraphicsscene.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpen.h \
 		MainView/SQLTableScene/TitleText.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/QGraphicsTextItem \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qgraphicsitem.h \
@@ -1044,18 +1036,10 @@ main.o: main.cpp ../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/QApplicat
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qmainwindow.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qtabwidget.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qicon.h \
-		MainView/MainView.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/QGraphicsView \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qgraphicsview.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpainter.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qtextoption.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpen.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qscrollarea.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qframe.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qgraphicsscene.h \
 		MainView/SQLTableScene/SQLTableScene.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/QGraphicsScene \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qgraphicsscene.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpen.h \
 		MainView/SQLTableScene/TitleText.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/QGraphicsTextItem \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qgraphicsitem.h \
@@ -1069,11 +1053,9 @@ main.o: main.cpp ../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/QApplicat
 		MainView/SQLTableScene/SceneWidgets/ComboBox/PopoutListOption.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
-MainWindow.o: MainWindow.cpp MainWindow.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/QMainWindow \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qmainwindow.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qwidget.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qwindowdefs.h \
+MainWindow.o: MainWindow.cpp ../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/QGraphicsView \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qgraphicsview.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qmetatype.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qglobal.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qconfig.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qfeatures.h \
@@ -1096,61 +1078,68 @@ MainWindow.o: MainWindow.cpp MainWindow.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qmutex.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qnumeric.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qversiontagging.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qobjectdefs.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qnamespace.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qwindowdefs_win.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qobject.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qstring.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qchar.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qbytearray.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qrefcount.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qnamespace.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qarraydata.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qstring.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qchar.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qstringbuilder.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qlist.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qvarlengtharray.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qcontainerfwd.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qalgorithms.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qobjectdefs.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpainter.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qrect.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qmargins.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qsize.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qpoint.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qscopedpointer.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpixmap.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpaintdevice.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qwindowdefs.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qwindowdefs_win.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qcolor.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qrgb.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qstringlist.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qlist.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qiterator.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qhashfunctions.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qpair.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qbytearraylist.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qstringlist.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qregexp.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qstringmatcher.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qcoreevent.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qscopedpointer.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qmetatype.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qvarlengtharray.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qcontainerfwd.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qobject_impl.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qmargins.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpaintdevice.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qrect.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qsize.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qpoint.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpalette.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qcolor.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qrgb.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qrgba64.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qbrush.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qvector.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qmatrix.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpolygon.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qregion.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qdatastream.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qiodevice.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qline.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qtransform.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpainterpath.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qimage.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpixelformat.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpixmap.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qsharedpointer.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qshareddata.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qhash.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qobject.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qcoreevent.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qobject_impl.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qimage.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpixelformat.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qtransform.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qmatrix.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpolygon.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qvector.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qregion.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qdatastream.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qiodevice.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qline.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpainterpath.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qtextoption.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpen.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qbrush.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qfontinfo.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qfont.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qfontmetrics.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qfontinfo.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qscrollarea.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qframe.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qwidget.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpalette.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qsizepolicy.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qcursor.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qkeysequence.h \
@@ -1168,18 +1157,12 @@ MainWindow.o: MainWindow.cpp MainWindow.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtCore/qfiledevice.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qvector2d.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qtouchdevice.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qgraphicsscene.h \
+		MainWindow.h \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/QMainWindow \
+		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qmainwindow.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qtabwidget.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qicon.h \
-		MainView/MainView.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/QGraphicsView \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qgraphicsview.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpainter.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qtextoption.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtGui/qpen.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qscrollarea.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qframe.h \
-		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qgraphicsscene.h \
 		MainView/SQLTableScene/SQLTableScene.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/QGraphicsScene \
 		MainView/SQLTableScene/TitleText.h \
@@ -1192,7 +1175,8 @@ MainWindow.o: MainWindow.cpp MainWindow.h \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/QGraphicsSceneMouseEvent \
 		../../DevelopTools/Qt5.7/5.7/gcc_64/include/QtWidgets/qgraphicssceneevent.h \
 		MainView/SQLTableScene/SceneWidgets/ComboBox/PopdownList.h \
-		MainView/SQLTableScene/SceneWidgets/ComboBox/PopoutListOption.h
+		MainView/SQLTableScene/SceneWidgets/ComboBox/PopoutListOption.h \
+		ui_MainWindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o MainWindow.o MainWindow.cpp
 
 MainView.o: MainView/MainView.cpp MainView/MainView.h \

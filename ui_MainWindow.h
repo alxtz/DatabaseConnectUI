@@ -13,11 +13,9 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
-#include <QtWidgets/QPushButton>
-#include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -26,28 +24,19 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QPushButton *pushButton;
-    QMenuBar *menubar;
-    QStatusBar *statusbar;
+    QGraphicsView *graphicsView;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(800, 600);
+        MainWindow->resize(802, 602);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(330, 250, 80, 25));
+        graphicsView = new QGraphicsView(centralwidget);
+        graphicsView->setObjectName(QStringLiteral("graphicsView"));
+        graphicsView->setGeometry(QRect(0, 0, 802, 602));
         MainWindow->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(MainWindow);
-        menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 22));
-        MainWindow->setMenuBar(menubar);
-        statusbar = new QStatusBar(MainWindow);
-        statusbar->setObjectName(QStringLiteral("statusbar"));
-        MainWindow->setStatusBar(statusbar);
 
         retranslateUi(MainWindow);
 
@@ -57,7 +46,6 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
-        pushButton->setText(QApplication::translate("MainWindow", "PushButton", 0));
     } // retranslateUi
 
 };

@@ -2,7 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <MainView/MainView.h>
+#include "MainView/SQLTableScene/SQLTableScene.h"
+
+namespace Ui
+{
+    class MainWindow;
+}
 
 class MainWindow : public QMainWindow
 {
@@ -13,7 +18,8 @@ class MainWindow : public QMainWindow
         ~MainWindow();
 
     private:
-        MainView * mainView;
+        Ui::MainWindow * ui;
+        SQLTableScene * sqlTableScene;
 };
 
 #endif // MAINWINDOW_H
