@@ -1,6 +1,7 @@
 #include <QDebug>
 #include <QBrush>
 #include <QColor>
+#include <QPixmap>
 #include "ComboBox.h"
 
 ComboBox::ComboBox()
@@ -20,6 +21,11 @@ ComboBox::ComboBox()
     //PopdownList
     popdownList = new PopdownList(this);
 
+    //Arrow
+    arrow = new QGraphicsPixmapItem(this);
+    arrow->setPixmap (QPixmap("./Images/downArrow.png"));
+    arrow->setPos(180 , 5);
+
     //Setup
     setTableList ();
     setFocusTable ();
@@ -35,11 +41,13 @@ void ComboBox::mousePressEvent(QGraphicsSceneMouseEvent *event)
     {
         isPop = true;
         popdownList->setVisible (true);
+        arrow->setPixmap (QPixmap("./Images/upArrow.png"));
     }
     else
     {
         isPop = false;
         popdownList->setVisible (false);
+        arrow->setPixmap (QPixmap("./Images/downArrow.png"));
     }
 }
 

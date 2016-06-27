@@ -5,6 +5,7 @@
 #include <vector>
 #include <QObject>
 #include <QGraphicsRectItem>
+#include <QGraphicsPixmapItem>
 #include <QGraphicsSceneMouseEvent>
 #include "PopdownList.h"
 
@@ -35,6 +36,9 @@ class ComboBox : public QObject , public QGraphicsRectItem
 
         //PopdownList
         PopdownList * popdownList;
+
+        //Arrows
+        QGraphicsPixmapItem * arrow;
 
         //Functions
         void setTableList();
