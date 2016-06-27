@@ -3,15 +3,24 @@
 
 
 #include <vector>
+#include <QObject>
 #include <QGraphicsRectItem>
+#include <QGraphicsSceneMouseEvent>
 #include "PopdownList.h"
 
 using namespace std;
 
-class ComboBox : public QGraphicsRectItem
+class ComboBox : public QObject , public QGraphicsRectItem
 {
+    Q_OBJECT
+
     public:
         ComboBox();
+
+        //Mouse reactions
+        void mousePressEvent (QGraphicsSceneMouseEvent * event);
+        void hoverEnterEvent (QGraphicsSceneMouseEvent * event);
+        void hoverLeaveEvent (QGraphicsSceneMouseEvent * event);
 
     private:
         //Default

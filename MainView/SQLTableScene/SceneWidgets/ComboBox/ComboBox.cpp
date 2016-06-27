@@ -26,6 +26,31 @@ ComboBox::ComboBox()
     popdownList->setTableList (tableList);
     popdownList->setSize (width , height);
     popdownList->setOptions ();
+    popdownList->setVisible (false);
+}
+
+void ComboBox::mousePressEvent(QGraphicsSceneMouseEvent *event)
+{
+    if(isPop==false)
+    {
+        isPop = true;
+        popdownList->setVisible (true);
+    }
+    else
+    {
+        isPop = false;
+        popdownList->setVisible (false);
+    }
+}
+
+void ComboBox::hoverEnterEvent(QGraphicsSceneMouseEvent *event)
+{
+
+}
+
+void ComboBox::hoverLeaveEvent(QGraphicsSceneMouseEvent *event)
+{
+
 }
 
 void ComboBox::setTableList()
