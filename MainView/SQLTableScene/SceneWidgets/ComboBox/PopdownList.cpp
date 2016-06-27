@@ -30,5 +30,7 @@ void PopdownList::setOptions()
         newOption->setSize ( optionWidth , optionHeight );
         newOption->setPos(0 , optionHeight*i );
         newOption->setOptionText (tableList->at(i));
+        newOption->setIndex (i);
+        optionList.push_back (newOption);
     }
 }

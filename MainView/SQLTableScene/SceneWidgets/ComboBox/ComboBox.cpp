@@ -33,6 +33,12 @@ ComboBox::ComboBox()
     popdownList->setSize (width , height);
     popdownList->setOptions ();
     popdownList->setVisible (false);
+
+    //Set focus signal and slots
+    for(int i=0; i<tableList->size (); ++i)
+    {
+        connect(popdownList->optionList.at(i) , SIGNAL(clickedIndex(int)) , this , SLOT(getIndex(int)) );
+    }
 }
 
 void ComboBox::mousePressEvent(QGraphicsSceneMouseEvent *event)
@@ -59,6 +65,25 @@ void ComboBox::hoverEnterEvent(QGraphicsSceneMouseEvent *event)
 void ComboBox::hoverLeaveEvent(QGraphicsSceneMouseEvent *event)
 {
 
+}
+
+void ComboBox::getIndex(int clickedIndex)
+{
+    if(isPop==false)
+    {
+        isPop = true;
+        popdownList->setVisible (true);
+        arrow->setPixmap (QPixmap("./Images/upArrow.png"));
+    }
+    else
+    {
+        focusTable = tableList->at(clickedIndex);
+        focusTableTextItem->setPlainText (focusTable);
+
+        isPop = false;
+        popdownList->setVisible (false);
+        arrow->setPixmap (QPixmap("./Images/downArrow.png"));
+    }
 }
 
 void ComboBox::setTableList()

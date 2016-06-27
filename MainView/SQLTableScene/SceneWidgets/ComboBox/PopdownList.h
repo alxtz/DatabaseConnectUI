@@ -4,6 +4,7 @@
 
 #include <vector>
 #include <QGraphicsRectItem>
+#include "PopoutListOption.h"
 
 using namespace std;
 
@@ -20,6 +21,9 @@ class PopdownList : public QGraphicsRectItem
         //Option data
         int optionWidth;
         int optionHeight;
+
+        //PopoutListOptionList
+        vector<PopoutListOption * > optionList;
 
     private:
         vector<QString> * tableList;

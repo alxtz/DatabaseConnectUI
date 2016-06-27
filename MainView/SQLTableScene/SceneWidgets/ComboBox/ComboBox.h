@@ -23,6 +23,9 @@ class ComboBox : public QObject , public QGraphicsRectItem
         void hoverEnterEvent (QGraphicsSceneMouseEvent * event);
         void hoverLeaveEvent (QGraphicsSceneMouseEvent * event);
 
+    public slots:
+        void getIndex(int clickedIndex);
+
     private:
         //Default
         int width;

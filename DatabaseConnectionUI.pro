@@ -28,3 +28,6 @@ HEADERS  += MainWindow.h \
     MainView/SQLTableScene/SceneWidgets/ComboBox/ComboBox.h \
     MainView/SQLTableScene/SceneWidgets/ComboBox/PopdownList.h \
     MainView/SQLTableScene/SceneWidgets/ComboBox/PopoutListOption.h
+
+FORMS += \
+    MainWindow.ui
